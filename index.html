@@ -15,21 +15,18 @@
      that sits next to this index.html file. Create that folder and
      drop in files with these exact names:
 
-       images/her-cover.jpg     (small round photo, optional, page 1)
-       images/her-1.jpg         (photo page 1)
-       images/her-2.jpg         (photo page 2)
-       images/her-3.jpg         (photo page 3)
-       images/her-final.jpg     (the "forever" page image)
-       images/her-big-1.jpg     (big square photo, thank-you page)
-       images/her-big-2.jpg     (big square photo, thank-you page)
-       images/her-circle.jpg    (circle photo, thank-you page)
+       images/her-1.jpeg   (used on all 3 letter pages)
+       images/her-final.jpeg   (the "forever" page photo)
+       images/her-circle.jpeg   (the circle photo, thank-you page)
+       images/her-big-1.jpeg   (big photo #1, thank-you page)
+       images/her-big-2.jpeg   (big photo #2, thank-you page)
 
      Until a file exists, a soft placeholder with the filename shows
      up instead, so you always know what's missing.
 
-  2) MUSIC: drop an mp3 at  music/our-song.mp3  and the little note
-     button in the corner will play it. No file = button just stays
-     quiet, nothing breaks.
+  2) MUSIC: drop an mp3 at  music/song.mp3  — it starts automatically
+     the moment she taps the bow on the bouquet. No file = it just
+     stays quiet, nothing breaks.
 
   3) THE LETTER lives in the LETTER_FULL variable near the bottom of
      the script. Edit the text there — it automatically splits itself
@@ -410,8 +407,8 @@
   <!-- PAGE 2 — forever -->
   <section class="page" id="page-final">
     <div class="frame">
-      <img src="images/her-final.jpg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
-      <div class="placeholder" style="display:flex;">add images/her-final.jpg</div>
+      <img src="images/her-final.jpeg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+      <div class="placeholder" style="display:flex;">add images/her-final.jpeg</div>
     </div>
     <div class="eyebrow-note"><!-- EDIT-ME -->mah chaotic kinda love — it's you i wanna be forever with 🫶</div>
     <button class="forever-btn glow-btn" id="forever-btn">forever mah love 🫠🫣</button>
@@ -420,17 +417,17 @@
   <!-- PAGE 3 — thank you -->
   <section class="page" id="page-thanks">
     <div class="frame round big-circle">
-      <img src="images/her-circle.jpg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
-      <div class="placeholder" style="display:flex; font-size:0.85rem;">add images/her-circle.jpg</div>
+      <img src="images/her-circle.jpeg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+      <div class="placeholder" style="display:flex; font-size:0.85rem;">add images/her-circle.jpeg</div>
     </div>
     <div class="big-pair" style="margin-top:2.4vh;">
       <div class="frame big">
-        <img src="images/her-big-1.jpg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
-        <div class="placeholder" style="display:flex;">add images/her-big-1.jpg</div>
+        <img src="images/her-big-1.jpeg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+        <div class="placeholder" style="display:flex;">add images/her-big-1.jpeg</div>
       </div>
       <div class="frame big">
-        <img src="images/her-big-2.jpg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
-        <div class="placeholder" style="display:flex;">add images/her-big-2.jpg</div>
+        <img src="images/her-big-2.jpeg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+        <div class="placeholder" style="display:flex;">add images/her-big-2.jpeg</div>
       </div>
     </div>
     <div class="thanks-text">mwahhh mah baby, i love you alott vaishnaviii 💞<br>thank you mah love, Vaishnavi 😻💞<br>mwah.</div>
@@ -443,7 +440,7 @@
 <div class="nav-arrow" id="arrow-next" style="display:none;">›</div>
 
 <audio id="bg-music" loop>
-  <source src="music/our-song.mp3" type="audio/mpeg">
+  <source src="music/song.mp3" type="audio/mpeg">
 </audio>
 
 <div id="burst-overlay">
@@ -515,8 +512,8 @@ And let's make a promise — to stay forever, take care of each other, love, be 
     section.style.overflowY = 'auto';
     section.innerHTML = `
       <div class="frame small">
-        <img src="images/her-1.jpg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
-        <div class="placeholder" style="display:flex;">add images/her-1.jpg</div>
+        <img src="images/her-1.jpeg" alt="her" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+        <div class="placeholder" style="display:flex;">add images/her-1.jpeg</div>
       </div>
       <div class="eyebrow-note">${i===0 ? 'six months of you &amp; me 🌷' : '&nbsp;'}</div>
       <div class="letter">${chunk}${letterChunks.length>1 ? `<span class="page-mark">${i+1} / ${letterChunks.length}</span>` : ''}</div>
@@ -624,3 +621,4 @@ And let's make a promise — to stay forever, take care of each other, love, be 
 
 </body>
 </html>
+
